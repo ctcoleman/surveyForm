@@ -32,7 +32,7 @@ select {
 #number {
   width: 15vw;
 }
-input:radio {
+input::radio {
   width: 20vw;
 }
 input:required {

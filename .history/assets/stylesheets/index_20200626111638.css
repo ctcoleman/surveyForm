@@ -33,7 +33,7 @@ select {
   width: 15vw;
 }
 input:radio {
-  width: 20vw;
+  
 }
 input:required {
   border: 1px solid red;

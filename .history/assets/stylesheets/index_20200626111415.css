@@ -32,9 +32,8 @@ select {
 #number {
   width: 15vw;
 }
-input:radio {
-  width: 20vw;
-}
+input #radioGreat,
+input 
 input:required {
   border: 1px solid red;
 }

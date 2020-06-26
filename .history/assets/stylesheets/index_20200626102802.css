@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html {
+ background: lightblue;
+ color: black;
+ -webkit-font-smoothing: antialiased;
+ 
+}
+
+#number {
+  width: 50px;
+}
+input:required {
+  border: 1px solid red;
+}

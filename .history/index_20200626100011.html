@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+  <head>
+    <meta name="description" content="Survey Form Example Project">
+    <meta name="author" content="Christopher Coleman">
+    <meta name="title" content="Survey Form Project">
+    <meta name="keywords" content="Survey, Forms, HTML, CSS, Example, Project"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Survey Form Project</title>
+  </head>
+
+<!-- Body -->
+  <body>
+
+  <!-- Header -->
+    <header id="titleHeading" class="heading">
+      <h1 id="title">Coleman Personal Survey</h1>
+    </header>
+
+  <!-- Main Content-->
+    <main id="main">
+      <section class="descriptionSection">
+        <p id="description">Your opinion matters with C-Money Enterprises. Tell us what you think.</p>
+      </section>
+    </main>
+  <!-- Footer -->
+    <footer>
+      <p>&copy;C-Money</p>
+    </footer>
+    <script>
+      const btn = document.querySelector('button');
+      const txt = document.querySelector('p')
+
+      btn.addEventListener('click', updateBtn);
+
+      function updateBtn () {
+        if (btn.textContent === 'I am a button') {
+          btn.textContent = 'I am a new button';
+          txt.textContent = 'New Lorem Ipsum';
+        } else {
+          btn.textContent = 'I am a button';
+          txt.textContent = 'Lorem Ipsum'
+        }
+      }
+    </script>
+    <script>url('https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js')</script>
+  </body>
+</html>

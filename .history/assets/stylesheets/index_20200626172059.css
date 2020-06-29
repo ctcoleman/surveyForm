@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html {
+ background: lightblue;
+ color: black;
+ -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: 6rem;
+  text-align: center;
+  margin: 5vh 3vw;
+}
+
+p {
+  font-size: 3rem;
+  text-align: center;
+  margin: 5vh 3vw;
+}
+
+input,
+select {
+  font-size: 1.5rem;
+  width: 60vw;
+}
+#number {
+  width: 15vw;
+}
+input {
+  width: 20vw;
+}
+input:required {
+  border: 1px solid red;
+}
+.
+input .radio {
+  width: 20vw;
+  font-size: 1.5rem;
+}
+label {
+  font-size: 1.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+select option {
+  font-size: 1.5rem;
+}

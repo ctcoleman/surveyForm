@@ -1,0 +1,64 @@
+/*
+=== Basic Styling ===
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-size: 62.5%
+}
+
+body {
+ background: grey;
+ color: white;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, label, select, p, a, input, button {
+  font-size: 1.5rem;
+  font-family: 'Helvetica';
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+button {
+ cursor: pointer;
+}
+
+/*
+=== Header Styling ===
+*/
+
+header {
+  margin: 5vh 0;
+  padding: 5vh 0;
+  background: black;
+  width: 100vw;
+}
+
+
+/*
+=== Description Styling ===
+*/
+
+#description {
+  font-size: 2rem;
+  text-align: center;
+  width: 75vw;
+  margin: 4vh 12.5vw;
+}
+
+/*
+=== Form Styling ===
+*/
+
+#

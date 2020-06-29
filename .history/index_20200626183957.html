@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+
+<head>
+  <meta name="description" content="Survey Form Example Project">
+  <meta name="author" content="Christopher Coleman">
+  <meta name="title" content="Survey Form Project">
+  <meta name="keywords" content="Survey, Forms, HTML, CSS, Example, Project" <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/index.css">
+  <title>Survey Form Project</title>
+</head>
+
+<!-- Body -->
+
+<body>
+
+
+  <!-- Main Content-->
+  <main id="main">
+
+    <!-- Header -->
+    <header id="titleHeading" class="heading">
+      <h1 id="title">Gettng To Know You</h1>
+      <h2>Survey Number One: The Basics</h2>
+      <section class="descriptionSection">
+        <p id="description">Welcome, and thank you for taking a few minutes to fill out a quick entery survey so we can get to know you better. This will help us create your profile and fill in any pertant information we may need form you. We may ask you for more information as you go along so, we can continue to update our services to better match your needs. This is the first of many surveys along your journey with us. So, without any further delay...let's get to know you!</p>
+      </section>
+    </header>
+
+    <!-- Survey Form -->
+    <form id="survey-form" class="formWrapper" action="#" method="post">
+      <!-- Name -->
+      <div class="formEntery nameEntery">
+        <label for="name-label">Name:</label>
+        <input type="text" id="name" name="user_name" placeholder="Name" required>
+      </div>
+      <!-- E-Mail -->
+      <div class="formEntery emailEntery">
+        <label for="email-label">Email:</label>
+        <input type="email" id="email" name="user_email" placeholder="Email" required>
+      </div>
+      <!-- Number -->
+      <div class="formEntery numberEntery">
+        <label for="number-label">Number:</label>
+        <input type="number" id="number" placeholder="Any number above 18" min="18" max="150">
+      </div>
+      <!-- Dropdown -->
+      <div class="formEntery dropdownEntery">
+        <label for="dropdown-label">Ethnicity:</label>
+        <select type="dropdown" id="dropdown" placeholder="Select from the following" required>
+          <option value="americanIndian">American Indian</option>
+          <option value="asian">Asian</option>
+          <option value="africanAmerican">African American</option>
+          <option value="hispanic">Hispanic</option>
+          <option value="pacificIslander">Pacific Islander</option>
+          <option value="white">White</option>
+      </div>
+      <!-- Radio Buttons -->
+      <div class="formEntery radioButtons">
+
+        <input class="radio" type="radio" id="radioGreat" name="radio" value="Great">
+        <label for="radioGreat">Great</label>
+
+        <input class="radio" type="radio" id="radioGood" name="radio" value="Good">
+        <label for="radioGood">Good</label>
+
+        <input class="radio" type="radio" id="radioOk" name="radio" value="Ok">
+        <label for="radioOk">Ok</label>
+
+      </div>
+    </form>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy;C-Money & Co</p>
+    </footer>
+  </main>
+
+  <script>
+    const btn = document.querySelector('button');
+    const txt = document.querySelector('p')
+
+    btn.addEventListener('click', updateBtn);
+
+    function updateBtn() {
+      if (btn.textContent === 'I am a button') {
+        btn.textContent = 'I am a new button';
+        txt.textContent = 'New Lorem Ipsum';
+      } else {
+        btn.textContent = 'I am a button';
+        txt.textContent = 'Lorem Ipsum'
+      }
+    }
+  </script>
+  <script>url('https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js')</script>
+</body>
+
+</html>

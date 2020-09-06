@@ -1,7 +1,6 @@
 
 
-/* Header Styling */
-
+/* 
 @media only screen and (max-device-width: 2500px) {
   #title-heading {
     background-image: url("/assets/images/welcome_2500.jpg");
@@ -50,4 +49,4 @@
   #title-heading {
     background-image: none;
   }
-}
+} */

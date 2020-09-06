@@ -20,18 +20,16 @@
     name="viewport"
     content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <!-- <link 
+  <link 
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+  crossorigin="anonymous">
+  <link 
     rel="stylesheet" 
     type="text/css" 
-    href="/assets/stylesheets/index.css"> -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Indie+Flower&family=Shadows+Into+Light&display=swap"
-    rel="stylesheet">
-  <link 
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-    crossorigin="anonymous">
+    href="/assets/stylesheets/index.css">
+
   <title> Survey | The Small Stuff </title>
 </head>
 
@@ -44,22 +42,24 @@
   <main id="main">
 
     <!-- Header -->
-    <header id="titleHeading" class="heading">
-      <h1 id="title">The Small Stuff</h1>
-      <h2>The Basics</h2>
-      <section class="descriptionSection">
+    <!-- Added Bootstrap jumbotron styling to the header....amazing...you can build usable sites in minutes with this...-->
+    <header id="title-heading" class="jumbotron">
+      <h1 id="title" class="display-4">The Small Stuff</h1>
+      <h2 class="lead">The Basics</h2>
+      <hr class="my-4" class="descriptionSection">
         <p id="description">Welcome, and thank you for taking a few minutes to fill out a quick entery survey so we can
           get to know you better. This will help us create your profile and fill in any pertant information we may need
           form you. We may ask you for more information as you go along so, we can continue to update our services to
           better match your needs. This is the first of many surveys along your journey with us. So, without any further
           delay...let's get to know you!</p>
-      </section>
+        </hr>
     </header>
 
-    <!-- Survey Form -->
+    <!-- Survey Form/Wrap in Bootstraps survey-group wrapper for some basic styling -->
     <form id="survey-form" class="form-group form-wrapper" action="#" method="post">
       <!-- Name Entery -->
       <div class="form-group name-entery">
+        <!-- Each input uses the bootstrap wrappers "form-text" for the label and "form-control" for the input section -->
         <label id="name-label" class="form-text" for="name-selection">Name:</label>
         <input type="text" class="form-control" id="name-selection" name="userName" placeholder="Full Name Required" required>
       </div>
@@ -91,6 +91,7 @@
       <!-- How are you feeling today? Radio Buttons -->
       <div class="form-group feeling-entery">
         <label class="form-text" >How do you feel today?...I really want to know...</label>
+        <!-- Radio and checkboxes differ only that they get their own wrapper "from-check-input" -- super easy to use! -->
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" id="great-button" name="feeling-button" value="great">
           <label class="form-check-label" for="great-button">Great</label>
@@ -104,6 +105,16 @@
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" id="ok-button" name="feeling-button" value="ok">
           <label class="form-check-label" for="ok-button">Ok</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="bad-button" name="feeling-button" value="bad">
+          <label class="form-check-label" for="bad-button">Bad</label>
+        </div>
+        
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="fo-button" name="feeling-button" value="fo">
+          <label class="form-check-label" for="fo-button">F@ck Off</label>
         </div>
       </div>
 
@@ -139,9 +150,11 @@
         <textarea class="form-control" id="additional-comments" name="additional-comments" placeholder="What else should we know about you?" rows="5"></textarea>
       </div>
 
+      <!-- BootStrap even had it's own button styling to make a nice looking submit button -->
       <button class="btn btn-primary" type="submit" id="submit" form="survey-form">Submit</button>
     </form>
-
+    
+    <!-- Just with the bootstrap and removing the previous styling/background the form looks much more professional -->
 
     <!-- Footer -->
     <footer>

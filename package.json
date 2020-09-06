@@ -1,0 +1,19 @@
+{
+  "name": "surveyform",
+  "version": "1.0.0",
+  "description": "## Porject Two: Survey Form",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctcoleman/surveyForm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ctcoleman/surveyForm/issues"
+  },
+  "homepage": "https://github.com/ctcoleman/surveyForm#readme"
+}

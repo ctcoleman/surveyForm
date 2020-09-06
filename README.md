@@ -47,3 +47,10 @@ You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is rec
 You can build your project by forking this CodePen pen. Or you can use this CDN link to run the tests in any environment you like: https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
 
 Once you're done, submit the URL to your working project with all its tests passing.
+
+### Additions
+
+V1.0 Conforms to FreeCodeCamp objectives
+
+V2.0 - September 6 2020
+I decided to do a V2.0 because I'm going to completely recreate the design of this app. This thing is atrocious(sp?). I'm going to learn how to use BootStrap CSS with the Bootstrap CDN. I've never used Bootstrap so this will be a complete learning experience. I have no clue what I was thinking with the background and font choice. This thing is uglier than hell. It completes 10/10 FreeCodeCamp objectives, but fails in every other way. The HTML is set up pretty well I will make a few minor changes here especially in class naming for the bootstrap.

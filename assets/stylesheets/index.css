@@ -5,7 +5,7 @@
 @media only screen and (max-device-width: 2500px) {
   #title-heading {
     background-image: url("/assets/images/welcome_2500.jpg");
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: screen;
@@ -16,7 +16,7 @@
 @media only screen and (max-device-width: 1200px) {
   #title-heading {
     background-image: url("/assets/images/welcome_1200.jpg");
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: screen;
@@ -27,7 +27,7 @@
 @media only screen and (max-device-width: 850px) {
   #title-heading {
     background-image: url("/assets/images/welcome_850.jpg");
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: screen;
@@ -38,7 +38,7 @@
 @media only screen and (max-device-width: 600px) {
   #title-heading {
     background-image: url("/assets/images/welcome_600.jpg");
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: screen;

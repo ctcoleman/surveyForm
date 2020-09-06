@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Head -->
+<!-- Head/MetaData -->
 
 <head>
   <meta 
@@ -20,10 +20,10 @@
     name="viewport"
     content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <link 
+  <!-- <link 
     rel="stylesheet" 
     type="text/css" 
-    href="/assets/stylesheets/index.css">
+    href="/assets/stylesheets/index.css"> -->
   <link
     href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Indie+Flower&family=Shadows+Into+Light&display=swap"
     rel="stylesheet">
@@ -32,7 +32,7 @@
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
     crossorigin="anonymous">
-  <title> Survey | Personal Prefrence </title>
+  <title> Survey | The Small Stuff </title>
 </head>
 
 <!-- Body -->
@@ -45,8 +45,8 @@
 
     <!-- Header -->
     <header id="titleHeading" class="heading">
-      <h1 id="title">Gettng To Know You</h1>
-      <h2>Survey Number One: The Basics</h2>
+      <h1 id="title">The Small Stuff</h1>
+      <h2>The Basics</h2>
       <section class="descriptionSection">
         <p id="description">Welcome, and thank you for taking a few minutes to fill out a quick entery survey so we can
           get to know you better. This will help us create your profile and fill in any pertant information we may need
@@ -57,26 +57,28 @@
     </header>
 
     <!-- Survey Form -->
-    <form id="survey-form" class="formWrapper" action="#" method="post">
-      <!-- Name -->
-      <div class="formEntery nameEntery">
-        <label id="name-label" for="name">Name:</label>
-        <input type="text" id="name" name="user_name" placeholder="Full Name Required" required>
+    <form id="survey-form" class="form-group form-wrapper" action="#" method="post">
+      <!-- Name Entery -->
+      <div class="form-group name-entery">
+        <label id="name-label" class="form-text" for="name-selection">Name:</label>
+        <input type="text" class="form-control" id="name-selection" name="userName" placeholder="Full Name Required" required>
       </div>
-      <!-- E-Mail -->
-      <div class="formEntery emailEntery">
-        <label id="email-label" for="email">Email:</label>
-        <input type="email" id="email" name="user_email" placeholder="Full Email Required" required>
+      <!-- E-Mail Entery -->
+      <div class="form-group email-entery">
+        <label id="email-label" class="form-text" for="email-selection">Email:</label>
+        <input type="email" class="form-control" id="email-selection" name="userEmail" placeholder="Full Email Required" required>
       </div>
-      <!-- Number -->
-      <div class="formEntery numberEntery">
-        <label id="number-label" for="number">Age:</label>
-        <input type="number" id="number" placeholder="Must be 18+" min="18" max="150">
+
+      <!-- Age Number Selection -->
+      <div class="form-group number-entery">
+        <label id="number-label" class="form-text" for="age-seletion">Age:</label>
+        <input type="number" class="form-control" id="age-selection" placeholder="Must be 18+" min="18" max="150">
       </div>
-      <!-- Dropdown -->
-      <div id="dropDownEntery" class="formEntery">
-        <label for="dropdown-label">Ethnicity:</label>
-        <select type="dropdown" id="dropdown" placeholder="Select from the following" required>
+
+      <!-- Ethnicity Dropdown -->
+      <div class="form-group ethnicity-entery">
+        <label class="form-text" id="ethnicity-label" for="ethnicity-selection">Ethnicity:</label>
+        <select class="form-control" type="dropdown" id="ethnicity-selection" placeholder="Select from the following" required>
           <option value="americanIndian">American Indian</option>
           <option value="asian">Asian</option>
           <option value="africanAmerican">African American</option>
@@ -85,49 +87,59 @@
           <option value="white">White</option>
         </select>
       </div>
-      <!-- Radio Buttons -->
-      <div id="radioButtons" class="formEntery radioButtons">
 
-        <label for="radioGreat">Great</label>
-        <input class="radio" type="radio" id="radioGreat" name="radio" value="Great">
-
-        <label for="radioGood">Good</label>
-        <input class="radio" type="radio" id="radioGood" name="radio" value="Good">
-
-        <label for="radioOk">Ok</label>
-        <input class="radio" type="radio" id="radioOk" name="radio" value="Ok">
-
-      </div>
-
-      <div id="checkboxInputs" class="formEntery checkbox">
-        <p>What is your employment status? </p>
-        <div id="fullTimeStudentCheck">
-          <label for="fullTimeStudent">Full-time Student</label>
-          <input type="checkbox" id="fullTimeStudent" name="Full-time Student" value="Full-time Student">
+      <!-- How are you feeling today? Radio Buttons -->
+      <div class="form-group feeling-entery">
+        <label class="form-text" >How do you feel today?...I really want to know...</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="great-button" name="feeling-button" value="great">
+          <label class="form-check-label" for="great-button">Great</label>
         </div>
-        <div id="partTimeStudentCheck">
-          <label for="partTimeStudent">Part-time Student</label>
-          <input type="checkbox" id="partTimeStudent" name="Part-time Student" value="Part-time Student">
+
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="good-button" name="feeling-button" value="good">
+          <label class="form-check-label" for="good-button">Good</label>
         </div>
-        <div id="fullTimeDeveloperCheck">
-          <label for="fullTimeDev">Full-time Developer</label>
-          <input type="checkbox" id="fullTimeDev" name="Full-time Developer" value="Full-time Developer">
-        </div>
-        <div id="partTimeDeveloperCheck">
-          <label for="partTimeDev">Part-time Developer</label>
-          <input type="checkbox" id="partTimeDev" name="Part-time Developer" value="Part-time Developer">
-        </div>
-        <div id="hobbiestCheckbox">
-          <label for="hobbiest">Hobbiest</label>
-          <input type="checkbox" id="hobbiest" name="Hobbiest" value="hobbiest">
+
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="ok-button" name="feeling-button" value="ok">
+          <label class="form-check-label" for="ok-button">Ok</label>
         </div>
       </div>
-      <div id="textarea">
-        <label for="additionalComments">Additional Comments:</label>
-        <textarea id="additionalComments" name="additionalComments">What else should we know about you? </textarea>
+
+      <div class="form-group employment-status-checkbox">
+        <label class="form-text">What is your employment status? </label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="ft-student-check" name="ft-student-check" value="ft-student">
+          <label class="form-check-label" for="ft-student-check">Full-time Student</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="pt-student-check" name="pt-student-check" value="pt-student">
+          <label class="form-check-label" for="pt-student-check">Part-time Student</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="ft-developer-check" name="ft-developer" value="ft-developer">
+          <label class="form-check-label" for="ft-developer-check">Full-time Developer</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="pt-developer" name="pt-developer" value="pt-developer">
+          <label class="form-check-label" for="pt-developer">Part-time Developer</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="hobbiest" name="Hobbiest" value="hobbiest">
+          <label class="form-check-label" for="hobbiest">Hobbiest</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="fbi" name="fbi" value="fbi" disabled>
+          <label class="form-check-label" for="hobbiest">FBI</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="additional-comments">Additional Comments:</label>
+        <textarea class="form-control" id="additional-comments" name="additional-comments" placeholder="What else should we know about you?" rows="5"></textarea>
       </div>
 
-      <button type="submit" id="submit" form="survey-form" value="Submit">Submit</button>
+      <button class="btn btn-primary" type="submit" id="submit" form="survey-form">Submit</button>
     </form>
 
 
